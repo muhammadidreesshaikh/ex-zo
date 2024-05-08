@@ -1,2 +1,2 @@
-# ex-zo-
+# ex-zo
 Web App - Angular
