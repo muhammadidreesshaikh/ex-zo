@@ -1,2 +1,2 @@
-# beat-angular-app
-Beat Angular App
+# ex-zo
+EX ZO
