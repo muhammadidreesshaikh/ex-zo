@@ -1,0 +1,73 @@
+<div class="homepage">
+    <app-carousel></app-carousel>
+    <div class="product-category-cards">
+        <div class="row">
+            <div class="col-12 col-md-3 col-lg-3 pr-0">
+                <app-category-card [category]="category"></app-category-card>
+            </div>
+            <div class="col-12 col-md-3 col-lg-3 pl-0 pr-0" *ngFor="let item of productCard">
+                <app-product-card [product]="item"></app-product-card>
+            </div>
+        </div>
+    </div>
+    <div class="information-card d-flex">
+        <app-info-card></app-info-card>
+        <app-info-card></app-info-card>
+    </div>
+    <div class="best-products">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 headings">
+                    <p>Popular Products</p>
+                    <h4>Only Best Products</h4>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3 pl-0 pr-0 mt-5" *ngFor="let item of bestProducts">
+                    <app-product-card [product]="item"></app-product-card>
+                </div>
+            </div>
+            <div class="view-btn d-flex justify-content-center">
+                <a class="c-btn btn-green">View all accessopries</a>
+            </div>
+        </div>
+    </div>
+    <div class="discount-card">
+        <div class="container">
+            <div class="row">
+                <app-discount-card></app-discount-card>
+            </div>
+        </div>
+    </div>
+    <div class="hotsale-card">
+        <div class="container">
+            <div class="row">
+                <div class="col-3" *ngFor="let item of saleCategory">
+                    <div class="row">
+                        <div class="col-12 pl-0">
+                            <h4>{{item.title}}</h4>
+                        </div>
+                        <div class="col-12 mt-4 pl-0" *ngFor="let p of item.products">
+                            <app-vertical-card [verticalCard]="p"></app-vertical-card>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blog-card">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 headings">
+                    <p>Our Blog</p>
+                    <h4>Latest Posts</h4>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 mt-5" *ngFor="let item of blogCard">
+                    <app-blog-card [blog]="item"></app-blog-card>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <a class="c-btn btn-green">Learn More</a>
+<a class="c-btn btn-white">View all categories</a>
+<a class="c-btn btn-black">Add to cart</a> -->

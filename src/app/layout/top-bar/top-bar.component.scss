@@ -1,0 +1,120 @@
+@import '/src/styles.scss';
+
+.top-bar {
+    border-bottom: 1px solid $lightSilver;
+    padding: 14px 0;
+    .leftside {
+        ul {
+            display: flex;
+            list-style: none;
+            padding-left: 0px;
+            li {
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: -16px;
+                    width: 1px;
+                    height: 57px;
+                    color: $lightSilver;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: -16px;
+                    width: 1px;
+                    height: 57px;
+                    color: $lightSilver;
+                }
+                padding: 0 20px;
+                a {
+                    position: relative;
+                    color: $black;
+                    font-weight: 500;
+                    font-size: 15px;
+                    span {
+                        color: $silver;
+                    }
+                }
+            }
+        }
+    }
+    .rightside {
+        display: flex;
+        align-items: center;
+        ul {
+            display: flex;
+            list-style: none;
+            li {
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: -14px;
+                    width: 1px;
+                    height: 56px;
+                    color: $lightSilver;;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: -14px;
+                    width: 1px;
+                    height: 56px;
+                    color: $lightSilver;;
+                }
+                padding: 0 20px;
+                a {
+                    color: $black;
+                    font-weight: 500;
+                    font-size: 15px;
+                    position: relative;
+                    i {
+                        font-size: 19px;
+                        &.fa-bag-shopping {
+                            font-size: 26px;
+                            padding-left: 6px;
+                        }
+                    }
+                    p {
+                        &.repeat-count {
+                            position: absolute;
+                            color: $green;
+                            top: 12px;
+                            left: 20px;
+                        }
+                    }
+                    span {
+                        &.count {
+                            position: absolute;
+                            left: 85px;
+                            top: -10px;
+                            border: 1px solid $green;
+                            background-color: $green;
+                            color: $white;
+                            border-radius: 50px;
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+                }
+                span {
+                    &.amount {
+                        font-size: 14px;
+                        color: $green;
+                        padding-left: 15px;
+                    }
+                }
+            }
+            span {
+                color: $silver;
+                font-size: 13px;
+                font-weight: 500;
+            }
+        }
+    } 
+}

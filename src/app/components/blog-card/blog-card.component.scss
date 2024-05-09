@@ -1,0 +1,51 @@
+@import '/src/styles.scss';
+
+.blog {
+    text-align: center;
+    img {
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 6px;
+    }
+    .content {
+        padding: 20px;
+        h4 {
+            color: $black;
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        p {
+            padding: 14px 0;
+            font-size: 14px;
+            font-weight: 500;
+            color: $silver;
+            span {
+                color: $green;
+                padding-left: 10px;
+                text-transform: uppercase;
+            }
+            &.info {
+                color: $silver;
+                font-size: 15px;
+                font-weight: 400;
+                padding: 0 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+        }
+        .learn-btn {
+            padding-top: 3rem;
+        }
+    }
+}
