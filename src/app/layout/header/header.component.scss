@@ -36,6 +36,9 @@
     }
     @media screen and (max-width: $tablet) {
         padding: 10px;
+        position: fixed;
+        top: 0;
+        z-index: 99;
     }
 }
 
