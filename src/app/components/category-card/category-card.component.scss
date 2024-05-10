@@ -3,6 +3,9 @@
 .c-card {
     padding: 30px;
     border: 1px solid #ccc;
+    @media screen and (max-width: $tablet) {
+        border: none;
+    }
     h4 {
         font-size: 22px;
         text-transform: uppercase;

@@ -10,7 +10,7 @@
             </div>
         </div>
     </div>
-    <div class="information-card d-flex">
+    <div class="information-card d-block d-sm-flex">
         <app-info-card></app-info-card>
         <app-info-card></app-info-card>
     </div>
@@ -43,7 +43,7 @@
     <div class="hotsale-card">
         <div class="container">
             <div class="row">
-                <div class="col-3" *ngFor="let item of saleCategory">
+                <div class="col-12 col-md-3" *ngFor="let item of saleCategory">
                     <div class="row">
                         <div class="col-12 pl-0">
                             <h4>{{item.title}}</h4>

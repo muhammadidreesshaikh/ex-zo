@@ -4,6 +4,9 @@
     padding: 30px;
     border: 1px solid #ccc;
     text-align: center;
+    @media screen and (max-width: $tablet) {
+        border: none;
+    }
     img {
         height: 220px;
         width: 100%;
