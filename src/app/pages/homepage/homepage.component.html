@@ -22,7 +22,7 @@
                     <h4>Only Best Products</h4>
                 </div>
                 <div class="col-12 col-md-3 col-lg-3 pl-0 pr-0 mt-5" *ngFor="let item of bestProducts">
-                    <app-product-card [product]="item"></app-product-card>
+                    <app-product-card id="products" [product]="item"></app-product-card>
                 </div>
             </div>
             <div class="view-btn d-flex justify-content-center">
@@ -37,6 +37,9 @@
             </div>
         </div>
     </div>
+    <div class="description-card">
+        <app-description-card></app-description-card>
+    </div>
     <div class="hotsale-card">
         <div class="container">
             <div class="row">
@@ -46,7 +49,7 @@
                             <h4>{{item.title}}</h4>
                         </div>
                         <div class="col-12 mt-4 pl-0" *ngFor="let p of item.products">
-                            <app-vertical-card [verticalCard]="p"></app-vertical-card>
+                            <app-vertical-card id="gallery" [verticalCard]="p"></app-vertical-card>
                         </div>
                     </div>
                 </div>
@@ -61,7 +64,7 @@
                     <h4>Latest Posts</h4>
                 </div>
                 <div class="col-12 col-md-4 col-lg-4 mt-5" *ngFor="let item of blogCard">
-                    <app-blog-card [blog]="item"></app-blog-card>
+                    <app-blog-card id="blogs" [blog]="item"></app-blog-card>
                 </div>
             </div>
         </div>
