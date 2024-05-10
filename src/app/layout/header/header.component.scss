@@ -34,4 +34,46 @@
             }
         }
     }
+    @media screen and (max-width: 768px) {
+        padding: 10px;
+    }
+}
+
+.mobile-header {
+    ul {
+        padding-top: 50px;
+        list-style: none;
+        li {
+            padding: 10px;
+            font-size: 25px;
+            a {
+                color: #000000;
+            }
+        }
+    }
+    &.side {
+        height: 100vh;
+        position: fixed;
+        z-index: 99;
+        top: 65px;
+        bottom: 0;
+        background: $white;
+        width: 100%;
+        position: fixed;
+        left: -100%;
+        transition: 0.8s;
+        &.show{
+            left: 0;
+        }
+    }
+}
+
+.hamburger-bars {
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    color: black;
+    top: 10px;
+    right: 15px;
+    font-size: 32px;
 }

@@ -7,7 +7,7 @@
                         <img src="../../../assets/img/logo">
                     </a>
                 </div>
-                <div class="rightside">
+                <div class="rightside d-none d-md-block d-lg-block">
                     <ul>
                         <li><a href="#" class="c-btn btn-green">Home</a></li>
                         <li><a href="#products">Product</a></li>
@@ -21,5 +21,19 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <a class="hamburger-bars d-block d-md-none" (click)="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </a>
+
+    <div class="mobile-header side d-block d-md-none" [ngClass]="{'show': toggleButton}">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#products">Product</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#blogs">Blog</a></li>
+        </ul>
     </div>
 </header>
