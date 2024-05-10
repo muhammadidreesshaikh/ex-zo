@@ -5,9 +5,12 @@
         &.c-img {
             background-size: cover;
             background-position: center;
-            height: 100vh !important;
+            height: 100vh;
             background: rgb(47,222,37);
             background: linear-gradient(90deg, rgba(47,222,37,1) 45%, rgba(0,212,255,1) 100%);
+            @media screen and (max-width: $tablet) {
+                height: 50vh;
+            }
         }
     }
     .carousel-caption {
