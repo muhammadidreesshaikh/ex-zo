@@ -1,5 +1,12 @@
 @import '/src/styles.scss';
 
+.product-category-cards {
+    .row {
+        @media screen and (max-width: $tablet) {
+            margin: 0;
+        }
+    }
+}
 .best-products {
     padding: 3rem 0;
     .headings {
