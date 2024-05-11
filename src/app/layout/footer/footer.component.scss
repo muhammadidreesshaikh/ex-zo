@@ -162,13 +162,15 @@
 
     .bottom-bar {
         padding-top: 30px;
+        @media screen and (max-width: $tablet) {
+            text-align: center;
+        }
     }
 
     .bottom-left {
         p {
             color: $silver;
             font-size: 13px;
-            float: left;
 
             a {
                 color: $green;
@@ -177,7 +179,6 @@
 
         @media screen and (max-width: $tablet) {
             margin-top: 15px;
-            text-align: center;
         }
     }
 
@@ -201,7 +202,6 @@
 
         @media screen and (max-width: $tablet) {
             margin-top: 15px;
-            text-align: center;
         }
     }
 
@@ -219,7 +219,6 @@
 
         @media screen and (max-width: $tablet) {
             margin-top: 15px;
-            text-align: center;
         }
     }
 }
