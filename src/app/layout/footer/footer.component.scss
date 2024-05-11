@@ -90,6 +90,10 @@
             align-items: center;
             margin-top: 15px;
         }
+
+        @media screen and (max-width: $tablet) {
+            margin-top: 30px;
+        }
     }
 
     .main-post {
@@ -130,6 +134,10 @@
             display: flex;
             flex-wrap: wrap;
         }
+
+        @media screen and (max-width: $tablet) {
+            margin-top: 30px;
+        }
     }
 
     .popular-chips {
@@ -150,9 +158,6 @@
 
     .bottom-bar {
         padding-top: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
     }
 
     .bottom-left {
@@ -163,6 +168,11 @@
             a {
                 color: $green;
             }
+        }
+
+        @media screen and (max-width: $tablet) {
+            margin-top: 15px;
+            text-align: center;
         }
     }
 
@@ -183,6 +193,11 @@
                 }
             }
         }
+
+        @media screen and (max-width: $tablet) {
+            margin-top: 15px;
+            text-align: center;
+        }
     }
 
     .bottom-right {
@@ -195,6 +210,11 @@
                 object-fit: cover;
                 object-position: center;
             }
+        }
+
+        @media screen and (max-width: $tablet) {
+            margin-top: 15px;
+            text-align: center;
         }
     }
 }
