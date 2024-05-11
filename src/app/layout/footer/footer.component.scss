@@ -77,6 +77,9 @@
                 color: $green;
             }
         }
+        @media screen and (max-width: $tablet) {
+            margin-top: 30px;
+        }
     }
 
     .some-post {
@@ -92,7 +95,7 @@
         }
 
         @media screen and (max-width: $tablet) {
-            margin-top: 30px;
+            margin-top: 40px;
         }
     }
 
@@ -136,7 +139,7 @@
         }
 
         @media screen and (max-width: $tablet) {
-            margin-top: 30px;
+            margin-top: 40px;
         }
     }
 
