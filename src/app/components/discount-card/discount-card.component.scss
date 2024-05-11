@@ -83,6 +83,10 @@
             object-position: center;
             position: relative;
             top: 25px;
+            @media screen and (max-width: $tablet) {
+                width: 250px;
+                top: 85px;
+            }
         }
     }
 }

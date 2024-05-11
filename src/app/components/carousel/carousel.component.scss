@@ -1,21 +1,19 @@
 @import '/src/styles.scss';
 
 .carousel-inner {
-    .img {
-        &.c-img {
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            background: rgb(47,222,37);
-            background: linear-gradient(90deg, rgba(47,222,37,1) 45%, rgba(0,212,255,1) 100%);
-            @media screen and (max-width: $tablet) {
-                height: 50vh;
+    .carousel-item{
+        .img {
+            &.c-img {
+                background-size: cover;
+                background-position: center;
+                height: 86vh;
+                @media screen and (max-width: $tablet) {
+                    height: 50vh;
+                }
             }
-            // @media screen and (max-width: $mobile) {
-            //     height: 50vh;
-            // }
         }
     }
+    
     .carousel-caption {
         top: 10% !important;
         .content-sec {
@@ -55,6 +53,9 @@
                         color: $white;
                         padding-right: 8px;
                     }
+                }
+                @media screen and (max-width: $tablet) {
+                    display: none;
                 }
             }
             .price {
