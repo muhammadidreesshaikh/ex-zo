@@ -1,68 +1,81 @@
 @import '/src/styles.scss';
 
 .carousel-inner {
-    .carousel-item{
-        .img {
+    .carousel-item {
+        img {
             &.c-img {
                 background-size: cover;
                 background-position: center;
-                height: 86vh;
+                height: 90vh;
+
                 @media screen and (max-width: $tablet) {
                     height: 50vh;
                 }
             }
         }
     }
-    
+
     .carousel-caption {
         top: 10% !important;
+
         .content-sec {
             text-align: left;
+
             p {
                 color: $white;
                 font-size: 15px;
                 padding-bottom: 2px;
+
                 &.brief {
                     width: 85%;
                     padding: 22px 0;
                 }
             }
+
             h5 {
                 color: $white;
                 font-size: 45px;
                 font-weight: 500;
                 text-transform: uppercase;
                 padding-bottom: 1.1rem;
+                position: relative;
+
                 &::after {
                     content: "";
                     position: absolute;
                     left: 0.3rem;
-                    top: 235px;
+                    top: 60px;
                     width: 50px;
                     height: 0px;
                     border-bottom: 1px solid $white;
                 }
             }
+
             .features {
                 p {
                     width: 85%;
                     font-size: 15px;
                     padding-bottom: 8px;
+
                     i {
                         font-size: 15px;
                         color: $white;
                         padding-right: 8px;
                     }
                 }
+
                 @media screen and (max-width: $tablet) {
                     display: none;
                 }
             }
+
             .price {
                 padding-top: 2rem;
+
                 p {
                     padding-right: 20px;
                     font-size: 17px;
+
                     span {
                         font-weight: 500;
                         padding-left: 8px;
@@ -70,6 +83,7 @@
                 }
             }
         }
+
         .img-sec {
             img {
                 width: 100%;

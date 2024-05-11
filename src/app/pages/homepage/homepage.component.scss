@@ -23,11 +23,13 @@
             font-size: 30px;
             font-weight: 700;
             padding-bottom: 2.5rem;
+            position: relative;
             &::after {
                 content: "";
                 position: absolute;
-                right: 33rem;
-                top: 80px;
+                left: 50%;
+                top: 50px;
+                transform: translate(-50%, 0px);
                 width: 100px;
                 height: 0px;
                 border-bottom: 1px solid $silver;
@@ -46,6 +48,10 @@
 }
 .hotsale-card {
     padding: 3rem 0;
+    @media screen and (max-width: $tablet) {
+        padding: 2rem 0;
+    }
+    
     h4 {
         font-size: 21px;
         font-weight: 700;
@@ -54,7 +60,7 @@
         padding-bottom: 2.5rem;
         position: relative;
         @media screen and (max-width: $tablet) {
-            padding: 1.5rem 0 0.5rem 0;
+            padding: 2.5rem 0 0.5rem 0;
         }
         &::after {
             content: "";
@@ -89,11 +95,13 @@
             font-size: 30px;
             font-weight: 700;
             padding-bottom: 2.5rem;
+            position: relative;
             &::after {
                 content: "";
                 position: absolute;
-                right: 33rem;
-                top: 80px;
+                left: 50%;
+                top: 50px;
+                transform: translate(-50%, 0px);
                 width: 100px;
                 height: 0px;
                 border-bottom: 1px solid $silver;
